@@ -2,6 +2,10 @@
 
 Based around the work of NitrOS-9, a community-based distribution of the Microware OS-9 operating system for the 6809 that was introduced in the late 1970s and sold into the 1980s, its next evolution is into _novel metal_.
 
+## Documentation
+
+Please consult the [wiki](https://nitros9.sourceforge.io/wiki/index.php/Main_Page). Mind it is rather slow to load and could benefit being moved.
+
 ## Support and Ports
 
 The Hitachi 6309, which contains additional registers and enhanced instructions, is also supported.

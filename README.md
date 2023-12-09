@@ -10,7 +10,7 @@ Please consult the [wiki](https://nitros9.sourceforge.io/wiki/index.php/Main_Pag
 
 The Hitachi 6309, which contains additional registers and enhanced instructions, is also supported.
 
-Here are the current ports of NitrOS-9 available:
+Here are the current ports available:
 
 | Computer  | Port | Processor |
 | ------------- | ------------- |  ------------- |
@@ -25,7 +25,7 @@ Here are the current ports of NitrOS-9 available:
 
 ## Downloading and Building
 
-In order to build NitrOS-9, you need the following:
+In order to build the OS, you need the following:
 
 - [lwtools](http://lwtools.projects.l-w.ca). This package contains the required 6809 assembler and linker.
 - [ToolShed](https://github.com/cartheur/M6809-toolshed). Provides file system tools for creating disk images, copying files to and from those disk images, and more.
@@ -33,7 +33,7 @@ In order to build NitrOS-9, you need the following:
 Once downloaded and installed, you can build the entire project:
 
 ```
-export NITROS9DIR=$HOME/nitros9
+export OS9DIR=$HOME/os9
 make
 ```
 

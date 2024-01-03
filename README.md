@@ -1,6 +1,6 @@
 # M6809-AeonOS9
 
-Based around the work of NitrOS-9, a community-based distribution of the Microware OS-9 operating system for the 6809 that was introduced in the late 1970s and sold into the 1980s, its next evolution is into _novel metal_.
+Based around the work of [NitrOS-9](https://github.com/n6il/nitros9), a community-based distribution of the Microware OS-9 operating system for the 6809 that was introduced in the late 1970s and sold into the 1980s, its next evolution is into _novel metal_.
 
 ## Documentation
 

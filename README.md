@@ -27,8 +27,8 @@ Here are the current ports available:
 
 In order to build the OS, you need the following:
 
-- [lwtools](http://lwtools.projects.l-w.ca). This package contains the required 6809 assembler and linker.
-- [ToolShed](https://github.com/cartheur/M6809-toolshed). Provides file system tools for creating disk images, copying files to and from those disk images, and more.
+* [lwtools](http://lwtools.projects.l-w.ca). This package contains the required 6809 assembler and linker.
+* [ToolShed](https://github.com/cartheur/M6809-toolshed). Provides file system tools for creating disk images, copying files to and from those disk images, and more.
 
 Once downloaded and installed, you can build the entire project:
 
@@ -39,3 +39,6 @@ make
 
 The result is a number of disk images (ending in .dsk) that can be used on real floppy drives, emulators, and DriveWire.
 
+### More information
+
+* On the subject of retrocomputing, some good information can be found [here](https://www.roug.org/retrocomputing/os/os9).

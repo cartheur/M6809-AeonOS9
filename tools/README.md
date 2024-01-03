@@ -1,4 +1,4 @@
-## Tools readme
+## Tools and handy tricks
 
 LWTOOLS contains the required 6809 assembler and linker. NITROS9PROJECT contains the zip files contains disk images for the most common machines.
 
@@ -10,4 +10,4 @@ LWTOOLS was born in 2006 when William Astle decided that none of the crossassemb
 
 ### nitros9project.zip
 
-The full set of disks (the result of running "make dskcopy" from the source) can be found in the "disks" folder. The index can be browsed at http://nitros9.sourceforge.net/v3.3.0/
+The full set of disks (the result of running `make dskcopy` from the source) can be found in the "disks" folder. The index can be browsed at http://nitros9.sourceforge.net/v3.3.0/

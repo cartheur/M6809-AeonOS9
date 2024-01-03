@@ -27,7 +27,7 @@ Here are the current ports available:
 
 In order to build the OS, you need the following:
 
-* [lwtools](http://lwtools.projects.l-w.ca). This package contains the required 6809 assembler and linker.
+* [lwtools](http://lwtools.projects.l-w.ca). This package contains the required 6809 assembler and linker. To get directly to it, have a look [here](/tools/README.md)
 * [ToolShed](https://github.com/cartheur/M6809-toolshed). Provides file system tools for creating disk images, copying files to and from those disk images, and more.
 
 Once downloaded and installed, you can build the entire project:

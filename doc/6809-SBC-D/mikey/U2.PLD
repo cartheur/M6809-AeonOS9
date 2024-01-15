@@ -1,0 +1,65 @@
+/*----------------------------------------------------------------------------
+* Mike Christle (c) 2014
+*-----------------------------------------------------------------------------
+*                        TERMS OF USE: MIT License
+*-----------------------------------------------------------------------------
+* Permission is hereby granted, free of charge, to any person obtaining a
+* copy of this software and associated documentation files (the "Software"),
+* to deal in the Software without restriction, including without limitation
+* the rights to use, copy, modify, merge, publish, distribute, sublicense,
+* and/or sell copies of the Software, and to permit persons to whom the
+* Software is furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+* FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+* DEALINGS IN THE SOFTWARE.
+*---------------------------------------------------------------------------*/
+
+Name     U2 ;
+PartNo   00 ;
+Date     9/16/2014 ;
+Revision 01 ;
+Designer Mike Christle ;
+Company  Christle Engineering ;
+Assembly Mini 6809 ;
+Location U2 ;
+Device   g16v8ma ;
+
+/* *************** INPUT PINS *********************/
+PIN  1 = ECLK;   /* 1.8432 MHz clock              */ 
+PIN  2 = A14;    /* Address 14                    */ 
+PIN  3 = A12;    /* Address 12                    */ 
+PIN  4 = A4;     /* Address 04                    */ 
+PIN  5 = A11;    /* Address 11                    */ 
+PIN  6 = A10;    /* Address 10                    */ 
+PIN  7 = A13;    /* Address 13                    */ 
+PIN  8 = RW;     /* Read / Write*                 */ 
+PIN  9 = A15;    /* Address 15                    */ 
+PIN 11 = RESET;  /* Reset*                        */ 
+PIN 14 = A8;     /* Address 08                    */ 
+PIN 18 = A9;     /* Address 09                    */ 
+
+/* *************** OUTPUT PINS ********************/
+PIN 12 = ROM_OE; /* ROM Output Enable             */ 
+PIN 13 = URT_CS; /* UART Chip Select              */ 
+PIN 15 = MRDY;   /* Ready to processor            */ 
+PIN 16 = RAM_OE; /* RAM Output Enable             */ 
+PIN 17 = RAM_WE; /* RAM Write Enable              */ 
+PIN 19 = PIA_CS; /* VIA Chip Select               */ 
+
+!RAM_OE = RESET & ECLK &  RW & !A15;
+!RAM_WE = RESET & ECLK & !RW & !A15;
+
+!ROM_OE = RESET & ECLK &  RW & A15 & (A14 # A13 # A12 # A11 # A10 # A9 # A8);
+
+!URT_CS = RESET & A15 & !A14 & !A13 & !A12 & !A11 & !A10 & !A4; /* 800X */
+!PIA_CS = RESET & A15 & !A14 & !A13 & !A12 & !A11 & !A10 &  A4; /* 801X */
+
+MRDY = 'b'1;

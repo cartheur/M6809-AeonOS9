@@ -42,3 +42,4 @@ The result is a number of disk images (ending in .dsk) that can be used on real 
 ### More information
 
 * On the subject of retrocomputing, some good information can be found [here](https://www.roug.org/retrocomputing/os/os9).
+* Toolshed [reference](https://toolshed.sourceforge.net/ToolShed.html)

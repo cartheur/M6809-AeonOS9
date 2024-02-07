@@ -4,7 +4,7 @@ Based around the work of [NitrOS-9](https://github.com/n6il/nitros9), a communit
 
 ## Documentation
 
-Please consult the [wiki](https://nitros9.sourceforge.io/wiki/index.php/Main_Page). Mind it is rather slow to load and could benefit being moved.
+Please consult the [wiki](https://nitros9.sourceforge.io/wiki/index.php/Main_Page). Mind it is rather slow to load and could benefit being moved. Will address this during the project.
 
 ## Support and Ports
 
